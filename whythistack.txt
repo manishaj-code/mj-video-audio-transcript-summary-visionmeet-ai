@@ -1,0 +1,101 @@
+FREE Stack: Streamlit + Groq/Gemini + Python
+Why This Stack?
+✅ Streamlit: Build web apps in pure Python (no HTML/CSS/JS needed)
+✅ Groq: Free fast LLM API (free tier generous)
+✅ Gemini: Google's free LLM API (free tier available)
+✅ Whisper: Free transcription (OpenAI)
+✅ Python: Easy to learn & deploy
+✅ Zero Frontend Development: Streamlit handles UI
+
+User Interface
+      ↓
+   Streamlit (Web App in Python)
+      ↓
+┌─────────────────────────────┐
+│   Python Services           │
+├─────────────────────────────┤
+│ • Whisper (Transcription)   │
+│ • Pyannote (Speaker Det.)   │
+│ • Groq/Gemini (LLM)         │
+│ • Chroma DB (Vector Search) │
+│ • Sentence-Transformers     │
+└─────────────────────────────┘
+      ↓
+  Cloud Storage (Firebase/Supabase)
+
+
+
+  python -m venv venv
+
+# 3. Activate venv
+venv\Scripts\activate
+
+# 4. Upgrade pip and setuptools
+python -m pip install --upgrade pip setuptools wheel
+
+# 5. Install from this fixed requirements.txt
+pip install -r requirements.txt
+
+
+
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Set up .env with API keys
+# (Add GROQ_API_KEY and GEMINI_API_KEY)
+
+# 3. Run Streamlit app
+streamlit run app.py
+
+# 4. Open browser
+# http://localhost:8501
+
+
+
+💰 Complete FREE Cost Breakdown
+Service	Free Tier	Usage
+Groq API	10,000 messages/day	LLM Summarization
+Gemini API	60 requests/min	LLM Alternative
+Whisper	Unlimited	Audio Transcription
+Chroma DB	Unlimited	Vector Search
+Sentence-Transformers	Unlimited	Embeddings
+Pyannote	Unlimited	Speaker Detection
+Streamlit Cloud	Free tier	Deploy app for free
+TOTAL		$0/month 🎉
+
+
+# 1. Push to GitHub
+git add .
+git commit -m "Initial commit"
+git push origin main
+
+# 2. Go to: https://share.streamlit.io
+# 3. Click "New app" → Connect GitHub
+# 4. Select repo, branch, and app.py
+# 5. Deploy! (5 mins)
+
+
+visionmeet-ai/
+├── app.py                 (Main Streamlit app)
+├── services/
+│   ├── transcription.py
+│   ├── llm_service.py
+│   ├── speaker_detection.py
+│   ├── vector_search.py
+│   └── video_processor.py
+├── requirements.txt
+├── .env                   (Keep secret)
+└── .env.example           (Share this)
+
+
+✨ Features in This Setup
+✅ Upload video/audio
+✅ Auto transcription (Whisper)
+✅ AI summarization (Groq/Gemini)
+✅ Speaker detection
+✅ Question-based search
+✅ Export transcripts
+✅ Action item extraction
+✅ Decision extraction
+✅ Beautiful web UI (Streamlit)
+✅ 100% FREE

@@ -1,0 +1,14 @@
+streamlit>=1.40.0
+groq>=0.10.0
+google-generativeai>=0.8.0
+faster-whisper>=1.1.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+python-dotenv>=1.0.1
+Pillow>=10.3.0
+numpy
+scipy
+librosa
+pydub
+ffmpeg-python==0.2.0
+pyannote-audio>=3.1.1
