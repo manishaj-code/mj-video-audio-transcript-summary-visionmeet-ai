@@ -13,9 +13,9 @@ def extract_audio_from_video(video_path: str) -> str:
     
     if not ffmpeg_path:
         # Fallback to local exe for Windows development
-        local_exe = os.path.join(os.getcwd(), "ffmpeg.exe")
-        if os.path.exists(local_exe):
-            ffmpeg_path = local_exe
+        #local_exe = os.path.join(os.getcwd(), "ffmpeg.exe")
+        if os.path.exists("/usr/bin/ffmpeg"):
+            ffmpeg_bin = "/usr/bin/ffmpeg"
         else:
             raise Exception("FFmpeg not found! On Cloud, ensure packages.txt has 'ffmpeg'. On Windows, ensure ffmpeg.exe is in the folder.")
 
