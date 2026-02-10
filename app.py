@@ -127,7 +127,7 @@ with tab1:
                 finally:
                     # Cleanup
                     os.remove(tmp_path)
-                    if os.path.exists(audio_path):
+                    if audio_path and os.path.exists(audio_path):
                         os.remove(audio_path)
 
 # Tab 2: Summary
